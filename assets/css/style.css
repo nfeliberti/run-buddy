@@ -124,9 +124,6 @@ section{
 .section-title{
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
 }
 .primary-border{
@@ -135,8 +132,8 @@ section{
 .secondary-border{
     border-color: #39a6b2;
 }
-.intro{
-    text-align: center;
+.flex-row{
+    display: flex;
 }
 .intro p{
     line-height: 1.7;
@@ -147,7 +144,6 @@ section{
     /*Could use display: inline-block; aswell*/
 }
 .steps{
-    text-align: center;
     background: #fce138;
 }
 .steps div{
@@ -169,9 +165,7 @@ section{
 .steps span{
     font-size: 38px;
 }
-.trainers{
-    text-align: center;
-}
+
 .trainer{
     width: 900px;
     margin: 0 auto 30px auto;
@@ -216,7 +210,6 @@ section{
 }
 /* REACH OUT STYLES START*/
 .contact {
-    text-align: center;
     background: #024e76;
 }
 .contact h2{
