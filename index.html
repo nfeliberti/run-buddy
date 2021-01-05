@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="./assets/css/style.css"/>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Run Buddy</title>
     </head>
 
@@ -33,7 +34,7 @@
              </header>
              <!--Hero/Jumbotron-->
              <section class="hero">
-                 <div class ="herp-cta">
+                 <div class ="hero-cta">
                      <h2>Start Building Habits.</h2>
                      <p>
                         seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
@@ -73,21 +74,36 @@
              </section>
              <!-- "what we do "section-->
              <section id="what-we-do" class="intro">
-                 <h2 class="section-title primary-border">What We Do</h2>
-                 <p>
-                     butcher selfies chambray shabby chic gentiry readymade yr Echo Park XOX Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
-                 </p>
+                 <div class="flex-row">
+                    <h2 class="section-title primary-border">
+                        What We Do
+                    </h2>
+                </div>
+                <div class="flex-row">
+                    <p>
+                         butcher selfies chambray shabby chic gentiry readymade yr Echo Park XOX Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+                    </p>
+                </div>
              </section>
              <!--"What you do" section-->
              <section id="what-you-do" class="steps">
-                 <h2 class="section-title secondary-border">What You Do</h2>
-
-                 <div>
-                     <img src="./assets/images/step-1.svg" alt= " "/> 
-                     <h3>Step 1: <span>Fill Out the Form Above</span></h3>
-                     <p>Your're already here, so why not?</p>
-                 </div>
-
+                <div class="flex-row">
+                    <h2 class="section-title secondary-border">
+                        What You Do
+                    </h2>
+                </div>
+                <div class="step">
+                    <h3>Step 1.</h3>
+                    <div class="step-info">
+                        <div class="step-img">
+                            <img src="./assets/images/step-1.svg" alt= " "/>
+                        </div>
+                        <div class="step-text">
+                        <h4>Fill Out the Form Above</h4>
+                        <p>Your're already here, so why not?</p>
+                        </div>
+                    </div>
+                </div>
                  <div>
                      <img src="./assets/images/step-2.svg" alt= " "/>
                      <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
@@ -106,10 +122,18 @@
                  </div>
              </section>
             <!--Meet the trainers section-->
-            <section id="your-trainers" class="trainers">
-                <h2 class="section-title primary-border">
-                    Meet The Trainers
-                </h2>
+            <section id="your-trainers">
+                <div class="trainers">
+                    <!-- This is for show; keep the article tags you have -->
+                    <article>Trainer 1 Info</article>
+                    <article>Trainer 2 Info</article>
+                    <article>Trainer 3 Info</article>  
+                  </div>
+                <div class="flex-row">
+                    <h2 class="section-title primary-border">
+                        Meet The Trainers
+                    </h2>
+                </div>
                 <!--first trainer info-->
                 <article class="trainer">
                     <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
@@ -124,6 +148,7 @@
                 </article>
                 <!--second trainer bio-->
                 <article class="trainer">
+                    <img src ="./assets/images/trainer-2.jpg" alt= "Joanna Gill cooling off after a workout"/>
                     <div class="trainer-bio text-right">
                         <h3>Joanna Gill</h3>
                         <h4>Endurance</h4>
@@ -132,7 +157,7 @@
                              itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
                         </p>
                     </div>
-                    <img src ="./assets/images/trainer-2.jpg" alt= "Joanna Gill cooling off after a workout"/>
+                    
                 </article>
                 <!--third trainer info-->
                 <article class="trainer">
@@ -149,44 +174,46 @@
             </section>
             <!--Reah out section-->
             <section id="reach-out" class="contact">
-                <h2 class="section-title secondary-border">Reach Out</h2>
+                <div class="flex-row">
+                    <h2 class="section-title secondary-border">
+                        Reach Out
+                    </h2>
+                </div>
                 <div class="contact-info">
-                    <iframe
+                    <h3>Run Buddy</h3>
+                    <p>
+                        Any questions or concerns before signing up?
+                        <br />
+                        Let us know and we'll be happy to talk to you!
+                    </p>
+                    <address>
+                        55 Main Street <br/>
+                        Some Town, CA <br/>
+                        12345<br />
+                        P: 555.RUN.BUDZ (555.786.2839)<br/>
+                        E: <a href="malito:info@runbuddy.io">info@runbuddy.io</a>
+                    </address>
+                </div>
+                <div class ="contact-form">
+                    <h3>Contact Us</h3>
+                    <form>
+                        <label for="contact-name"> Your name</label>
+                        <input type="text" id="contact-name" placeholder="Your Name"/>
+
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                
+                <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.7055771823175!2d-81.86668998487646!3d30.13123728185083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5c28223eb5a4d%3A0x3e61090fdd38d1dc!2s4495%20Song%20Sparrow%20Dr%2C%20Middleburg%2C%20FL%2032068!5e0!3m2!1sen!2sus!4v1608489056787!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
                     framerborder="0"
                     height="400"
                     width="400"
                     style="border:0"
-                    allowfullscreen
-                    >
-                    </iframe>
-                    <div class ="contact-form">
-                        <h3>Contact Us</h3>
-                        <form>
-                            <label for="contact-name"> Your name</label>
-                            <input type="text" id="contact-name" placeholder="Your Name"/>
-
-                            <label for="contact-message">Message</label>
-                            <textarea id="contact-message" placeholder="Message"></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                    <div>
-                        <h3>Run Buddy</h3>
-                        <p>
-                            Any questions or concerns before signing up?
-                            <br />
-                            Let us know and we'll be happy to talk to you!
-                        </p>
-                        <address>
-                            55 Main Street <br/>
-                            Some Town, CA <br/>
-                            12345<br />
-                            P: 555.RUN.BUDZ (555.786.2839)<br/>
-                            E: <a href="malito:info@runbuddy.io">info@runbuddy.io</a>
-                        </address>
-                    </div>
-                </div>
+                    allowfullscreen>
+                </iframe>
             </section>
             <!--Footer-->
             <footer>
